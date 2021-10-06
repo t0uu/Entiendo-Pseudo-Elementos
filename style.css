@@ -1,0 +1,32 @@
+p::first-letter{
+    font-size: 3em;
+}
+
+p::first-line{
+    color:brown;
+}
+
+/* Before, seria algo que se muestre antes del texto */
+.footer::before{
+    content: '&copy';
+}
+
+ul li{
+    /* display: flex; */
+    display: inline;
+}
+/* agrega algo después del elemento */
+li::after{
+    content: '>';
+}
+/* last-child es ultimo hijo */
+li:last-child::after{
+    content: '';
+}
+ul li:hover{
+    background-color: aqua;
+}
+ul li:focus-visible{
+    background-color: rgb(52, 99, 100);
+    border: 2px solid black;
+}
